@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg-color: #ebebeb;
+  --btn-primary-color: #09a54f;
+  --btn-secondary-color: #04c55c;
+  --btn-gmail-color: #2e3748;
+  --btn-gmail-hover: #ce493b;
+  --link: #1e32df;
+  --grey: #7c7c7c;
+  --black: rgb(27, 27, 27);
+}
+html{
+  font-size: 93.75%;
+}
+body{
+  background: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.img {
+  width: 50%;
+  height: 100vh;
+  background-image: url(.././img/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p{
+  color: var(--grey);
+  margin-bottom: 0.5rem;
+}
+
+h1{
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+div.inputs {
+  width: 50%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15vh 0 15vh;
+  
+}
+
+label {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.group-input{
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 16px;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grey);
+}
+
+input[type="email"]{
+  margin-bottom: .5rem;
+}
+
+.eye{
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
+  position:absolute;
+  color: var(--grey);
+  top: 52vh;
+  right: 18vh;
+  z-index: 10;
+  border:none;
+  background:transparent;
+
+}
+.password{
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.login {
+  background-color: var(--btn-primary-color);
+}
+.login:hover {
+  background-color: var(--btn-secondary-color);
+}
+.gmail {
+  background-color: var(--btn-gmail-color);
+}
+.gmail span {
+  font-weight: 700;
+  font-size: 16px;
+}
+.gmail:hover {
+  background-color: var(--btn-gmail-hover);
+}
+span a {
+  text-decoration: none;
+  color: var(--link);
+  transition: all 0.2s;
+  opacity: 0.9;
+}
+span a:hover {
+  opacity: 1;
+  font-weight: 400;
+}
+
+span.text-join {
+  color: var(--grey);
+  margin: 1rem 0 0 0;
+}
+@media (max-width: 826px){
+  .eye{
+    top: 55vh;
+  }
+}
+@media (max-width: 825px){
+  .eye{
+    top: 56vh;
+  }
+}
+@media (max-width: 704px){
+  .eye{
+    top: 54vh;
+  }
+}
+@media (max-width: 740px){
+  html{
+      font-size: 87.5%;
+  }
+
+}
+@media (max-width: 590px){
+  html{
+      font-size: 75.5%;
+  }
+}
+@media (max-width: 540px){
+  html{
+      font-size: 65.5%;
+  }
+}
